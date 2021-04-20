@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -47,10 +48,14 @@
                             break;
 
                         case $celsius > 15 and $celsius <= 20:
-                            echo '<div class="col-2 py-2 text-warning fw-bold border border-warning">Warm.It is beach time</div>';
+                            echo '<div class="col-2 py-2 text-secondary fw-bold border border-secondary">Warm enough. Summer is back</div>';
+                            break;
+
+                        case $celsius > 20 and $celsius <= 25:
+                            echo '<div class="col-2 py-2 text-warning fw-bold border border-warning">Very warm. It is beach time</div>';
                             break;
                         
-                        case $celsius > 20:
+                        case $celsius > 25:
                             echo '<div class="col-2 py-2 text-danger fw-bold border border-danger">The weather is hot like red chili pepper. Stay home</div>';
                             break;
 
@@ -69,3 +74,4 @@
             </div>
     </div>
 </body>
+</html>
