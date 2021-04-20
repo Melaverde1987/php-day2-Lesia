@@ -16,7 +16,7 @@
         <?php
             $showFormular = true;
             if( isset($_POST['submit'])) {
-                if( $_POST["name"] || $_POST["surname"] )
+                if( $_POST["name"] && $_POST["surname"] )
                 {   
                     $showFormular = false;
                     echo "Welcome ". $_POST[ 'name'] . ' ';

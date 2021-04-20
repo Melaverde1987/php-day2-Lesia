@@ -16,7 +16,7 @@
         <?php
             function divideFunction($num1, $num2) {
                 $result = $num1 / $num2;
-                echo  "$num1 divided on $num2 makes $result";
+                echo  "$num1 divided by $num2 is $result";
             }
 
             divideFunction(300, 15);
