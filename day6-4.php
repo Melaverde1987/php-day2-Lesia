@@ -14,14 +14,14 @@
 <body>
     <div class="container mt-5">
         <?php
-            function gradesFunction($Math, $Physics, $English) {
-                $sum = $Math + $Physics + $English;
-                $average = $sum / 3;
-                echo  "Sum is: $sum<br>";
-                echo  "Average is: $average";
+            function boxFunction($width, $height, $depth) {
+                $area = $width * $height;
+                $volume  = $width * $height * $depth;
+                echo  "The area of the box is: $area cm2<br>";
+                echo  "The volume of the box is: $volume cm3";
             }
 
-            gradesFunction(5, 2, 1);
+            boxFunction(10, 15, 3);
         ?>
     </div>
 </body>

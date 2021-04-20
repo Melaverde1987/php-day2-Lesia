@@ -14,14 +14,13 @@
 <body>
     <div class="container mt-5">
         <?php
-            function gradesFunction($Math, $Physics, $English) {
-                $sum = $Math + $Physics + $English;
-                $average = $sum / 3;
-                echo  "Sum is: $sum<br>";
-                echo  "Average is: $average";
+            function calculateHours($num) {
+                $hours = floor( $num / 60 );
+                $minutes = $num - ( $hours * 60);
+                echo  "$num minutes = $hours hour(s) and $minutes minute(s)";
             }
 
-            gradesFunction(5, 2, 1);
+            calculateHours(320);
         ?>
     </div>
 </body>

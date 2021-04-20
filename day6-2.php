@@ -14,13 +14,12 @@
 <body>
     <div class="container mt-5">
         <?php
-            function calculateHours($num) {
-                $hours = floor( $num / 60 );
-                $minutes = $num - ( $hours * 60);
-                echo  "$num minutes = $hours hour(s) and $minutes minute(s)";
+            function divideFunction($num1, $num2) {
+                $result = $num1 / $num2;
+                echo  "$num1 divided on $num2 makes $result";
             }
 
-            calculateHours(320);
+            divideFunction(300, 15);
         ?>
     </div>
 </body>
